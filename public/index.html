@@ -25,7 +25,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
 
 let marker = L.marker([0,0]).addTo(map);
 
-const socket = new WebSocket("ws://localhost:3000");
+const socket = new WebSocket("wss://robot-gps.onrender.com");
 
 socket.onmessage = (event) => {
 
